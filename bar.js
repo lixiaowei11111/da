@@ -25,7 +25,7 @@ const formatter = (params) => {
 };
 
 const renderBar = (data) => {
-  const { xData, yData, zData, zLabelName } = data;
+  const { xData, yData, zData, dimension } = data;
   const barDom = document.getElementById("bar");
   const barChart = echarts.init(barDom);
 
@@ -73,7 +73,7 @@ const renderBar = (data) => {
       },
     },
     zAxis3D: {
-      name: zLabelName,
+      name: dimension,
       type: "value",
     },
     grid3D: {

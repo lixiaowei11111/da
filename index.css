@@ -3,18 +3,17 @@ main {
 }
 
 header {
-  margin: 80px auto 0;
+  margin: 80px auto 80px;
   display: flex;
   justify-content: center;
 }
 
-section {
-  margin: 80px 0;
+.s_head {
+  margin: 40px auto;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding-left: 30%;
 }
 
-section>div {
-  margin-top: 80px;
+.s_head > select {
+  margin-right: 40px;
 }
