@@ -1,0 +1,20 @@
+main {
+  margin: 0 auto;
+}
+
+header {
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section>div {
+  margin-top: 80px;
+}

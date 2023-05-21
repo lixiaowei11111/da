@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- excel导入 -->
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <input
+          placeholder="选择excel文件"
+          type="file"
+          id="excelFileInput"
+          accept=".xlsx, .xls"
+        />
+      </header>
+      <hr />
+      <section>
+        <div id="bar" style="width: 80%; height: 600px"></div>
+        <div id="map" style="width: 80%; height: 600px"></div>
+      </section>
+    </main>
+    <script type="module" src="./transform.js"></script>
+    <script type="module" src="./bar.js"></script>
+    <script type="module" src="./map.js"></script>
+  </body>
+</html>
