@@ -4,7 +4,7 @@ let mapOptions;
 
 mapChart.showLoading();
 
-fetch("https://geo.datav.aliyun.com/areas_v3/bound/810000_full.json")
+fetch("./hongkong.json")
   .then((response) => response.json())
   .then((geoJson) => {
     mapChart.hideLoading();
