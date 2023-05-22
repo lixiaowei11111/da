@@ -29,13 +29,21 @@ const renderBar = (data) => {
   const barDom = document.getElementById("bar");
   const barChart = echarts.init(barDom);
 
+  // 获取 value, 来设置最大值和最小值
+  const valueList = zData.map((v) => v[2]);
+  const max = Math.max(...valueList);
+  const min = Math.min(...valueList);
+  console.log("最大值:", max); // 输出：最大值: 9
+  console.log("最小值:", min); // 输出：最小值: 1
+
   const barOptions = {
     tooltip: {
       show: false,
     },
     visualMap: {
       show: false, // 关闭颜色条选择器
-      max: 20,
+      max,
+      min,
       inRange: {
         color: [
           "#cdebd3",
